@@ -1,0 +1,43 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Logo cuadrado (símbolo + texto vertical) - Para avatares y redes sociales -->
+    <defs>
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #0CA5BE; stop-opacity: 1" />
+            <stop offset="50%" style="stop-color: #57CDDF; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #0BA5BE; stop-opacity: 1" />
+        </linearGradient>
+        
+        <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+    
+    <!-- Red neuronal centrada -->
+    <!-- Nodos externos -->
+    <circle cx="150" cy="70" r="12" fill="#0BA5BE" />
+    <circle cx="100" cy="120" r="12" fill="#0BA5BE" />
+    <circle cx="200" cy="120" r="12" fill="#0BA5BE" />
+    <circle cx="120" cy="170" r="12" fill="#0BA5BE" />
+    <circle cx="180" cy="170" r="12" fill="#0BA5BE" />
+    
+    <!-- Conexiones -->
+    <line x1="150" y1="70" x2="100" y2="120" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="150" y1="70" x2="200" y2="120" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="100" y1="120" x2="120" y2="170" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="100" y1="120" x2="180" y2="170" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="200" y1="120" x2="120" y2="170" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="200" y1="120" x2="180" y2="170" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    <line x1="120" y1="170" x2="180" y2="170" stroke="#0BA5BE" stroke-width="3" opacity="0.6" />
+    
+    <!-- Nodos internos pequeños -->
+    <circle cx="150" cy="95" r="6" fill="white" opacity="0.8" />
+    <circle cx="125" cy="120" r="6" fill="white" opacity="0.8" />
+    <circle cx="175" cy="120" r="6" fill="white" opacity="0.8" />
+    <circle cx="150" cy="145" r="6" fill="white" opacity="0.8" />
+    
+    <!-- Nodo central -->
+    <circle cx="150" cy="120" r="26" fill="#0BA5BE" stroke="white" stroke-width="3.5" />
+    
+    <!-- Texto CMSR92 centrado debajo -->
+    <text x="150" y="235" font-family="monospace" font-size="48" font-weight="bold" fill="url(#textGradient)" text-anchor="middle" filter="url(#textShadow)">CMSR92</text>
+</svg>

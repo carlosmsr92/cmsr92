@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSR92 - Brand Guide & Logo Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #0CA5BE;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 3rem 0 1.5rem;
+            color: #0CA5BE;
+            border-bottom: 3px solid #0CA5BE;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            color: #666;
+        }
+        
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .logo-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .logo-card h3 {
+            margin-top: 1rem;
+            color: #0CA5BE;
+        }
+        
+        .logo-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .logo-preview {
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-preview.dark {
+            background: #1a1a1a;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .color-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .color-swatch {
+            width: 100%;
+            height: 120px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .color-info {
+            font-family: monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        
+        .usage-examples {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .example-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 2px dashed #ddd;
+            border-radius: 4px;
+        }
+        
+        .example-section h4 {
+            color: #0CA5BE;
+            margin-bottom: 1rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .gradient-demo {
+            height: 100px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 50%, #0BA5BE 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: monospace;
+            text-shadow: 0 0 2px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>🎨 CMSR92 Brand Identity Guide</h1>
+            <p style="font-size: 1.1rem; color: #666; margin-top: 1rem;">
+                Guía completa de identidad de marca, logos y colores corporativos para uso en cualquier web o medio digital.
+            </p>
+        </div>
+
+        <h2>📐 Variantes de Logo</h2>
+        
+        <div class="logo-grid">
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="logo-variants/CMSR92-logo-horizontal.svg" alt="Logo Horizontal" style="max-width: 100%; height: auto;">
+                </div>
+                <h3>Logo Horizontal</h3>
+                <p><strong>280×100px</strong></p>
+                <p>Para headers, documentos y espacios anchos</p>
+                <code>CMSR92-logo-horizontal.svg</code>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="logo-variants/CMSR92-logo-square.svg" alt="Logo Cuadrado" style="max-width: 80%; height: auto;">
+                </div>
+                <h3>Logo Cuadrado</h3>
+                <p><strong>300×300px</strong></p>
+                <p>Para avatares y redes sociales</p>
+                <code>CMSR92-logo-square.svg</code>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-preview">
+                    <img src="logo-variants/CMSR92-symbol-only.svg" alt="Símbolo Solo" style="width: 80px; height: auto;">
+                </div>
+                <h3>Símbolo Solo</h3>
+                <p><strong>100×100px</strong></p>
+                <p>Para favicon e iconos pequeños</p>
+                <code>CMSR92-symbol-only.svg</code>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-preview dark">
+                    <img src="logo-variants/CMSR92-logo-horizontal.svg" alt="Logo en fondo oscuro" style="max-width: 100%; height: auto;">
+                </div>
+                <h3>Vista en Fondo Oscuro</h3>
+                <p><strong>Cualquier variante</strong></p>
+                <p>Optimizado para temas oscuros</p>
+                <code>Compatible con dark mode</code>
+            </div>
+        </div>
+
+        <h2>🎨 Paleta de Colores Corporativos</h2>
+        
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #0CA5BE;"></div>
+                <h3>Cyan Principal</h3>
+                <div class="color-info">
+                    <div><strong>HEX:</strong> #0CA5BE</div>
+                    <div><strong>RGB:</strong> 12, 165, 190</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #57CDDF;"></div>
+                <h3>Cyan Claro</h3>
+                <div class="color-info">
+                    <div><strong>HEX:</strong> #57CDDF</div>
+                    <div><strong>RGB:</strong> 87, 205, 223</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #0BA5BE;"></div>
+                <h3>Cyan Oscuro</h3>
+                <div class="color-info">
+                    <div><strong>HEX:</strong> #0BA5BE</div>
+                    <div><strong>RGB:</strong> 11, 165, 190</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #ddd;"></div>
+                <h3>Blanco</h3>
+                <div class="color-info">
+                    <div><strong>HEX:</strong> #FFFFFF</div>
+                    <div><strong>RGB:</strong> 255, 255, 255</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>✨ Gradiente de Marca</h2>
+        <div class="gradient-demo">CMSR92</div>
+        <pre><code>background: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 50%, #0BA5BE 100%);</code></pre>
+
+        <h2>💻 Ejemplos de Integración</h2>
+        
+        <div class="usage-examples">
+            <div class="example-section">
+                <h4>En HTML (Logo Horizontal)</h4>
+                <pre>&lt;img src="brand-assets/logo-variants/CMSR92-logo-horizontal.svg" 
+     alt="CMSR92" 
+     height="50"&gt;</pre>
+            </div>
+
+            <div class="example-section">
+                <h4>En HTML (Logo Cuadrado para Avatar)</h4>
+                <pre>&lt;img src="brand-assets/logo-variants/CMSR92-logo-square.svg" 
+     alt="CMSR92" 
+     width="150"&gt;</pre>
+            </div>
+
+            <div class="example-section">
+                <h4>Como Favicon</h4>
+                <pre>&lt;link rel="icon" 
+      type="image/svg+xml" 
+      href="brand-assets/logo-variants/CMSR92-symbol-only.svg"&gt;</pre>
+            </div>
+
+            <div class="example-section">
+                <h4>En CSS (Background)</h4>
+                <pre>.header-logo {
+    background-image: url('brand-assets/logo-variants/CMSR92-logo-horizontal.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 100px;
+}</pre>
+            </div>
+
+            <div class="example-section">
+                <h4>Aplicar Colores de Marca en CSS</h4>
+                <pre>:root {
+    --brand-cyan: #0CA5BE;
+    --brand-cyan-light: #57CDDF;
+    --brand-cyan-dark: #0BA5BE;
+}
+
+.button-primary {
+    background: var(--brand-cyan);
+    background: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 50%, #0BA5BE 100%);
+}
+
+.text-brand {
+    color: var(--brand-cyan);
+}</pre>
+            </div>
+        </div>
+
+        <div class="intro" style="margin-top: 3rem;">
+            <h2 style="border: none; margin-top: 0;">📝 Mejores Prácticas</h2>
+            <ul style="margin-left: 1.5rem; line-height: 2;">
+                <li>✅ Usa siempre archivos SVG para máxima calidad escalable</li>
+                <li>✅ Mantén las proporciones originales del logo (no distorsionar)</li>
+                <li>✅ Usa la variante apropiada según el espacio disponible</li>
+                <li>✅ Asegura buen contraste entre el logo y el fondo</li>
+                <li>❌ No cambies los colores corporativos del logo</li>
+                <li>❌ No añadas efectos adicionales (el logo ya está optimizado)</li>
+                <li>❌ No uses versiones de baja calidad cuando hay SVG disponible</li>
+            </ul>
+        </div>
+
+        <footer style="text-align: center; padding: 2rem 0; color: #999; margin-top: 3rem; border-top: 1px solid #ddd;">
+            <p><strong>CMSR92 Brand Assets</strong> - Carlos Manuel Suárez Rivero</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Data Scientist & AI Specialist</p>
+        </footer>
+    </div>
+</body>
+</html>

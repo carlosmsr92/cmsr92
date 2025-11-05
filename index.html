@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Manuel Suárez Rivero - Data Scientist & AI Specialist</title>
+    <meta name="description" content="Portfolio de Carlos Manuel Suárez Rivero, estudiante de Ciencia de Datos con especialización en Machine Learning, Deep Learning, Inteligencia Artificial, Big Data y Business Intelligence. Proyectos de análisis avanzado y visualización de datos.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Carlos Manuel Suárez Rivero - Data Scientist & AI Specialist">
+    <meta property="og:description" content="Estudiante de Ciencia de Datos especializado en Machine Learning, Deep Learning, IA, Big Data y Business Intelligence. Portfolio de proyectos y dashboards interactivos.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <!-- Logo Neural Network SVG -->
+                <svg class="logo" viewBox="0 0 280 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="textGradientLarge" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color: #FFFFFF; stop-opacity: 1" />
+                            <stop offset="50%" style="stop-color: #7DFFFF; stop-opacity: 1" />
+                            <stop offset="100%" style="stop-color: #00D4FF; stop-opacity: 1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Nodos principales -->
+                    <circle cx="50" cy="20" r="8" fill="#0BA5BE" class="pulse" />
+                    <circle cx="20" cy="50" r="8" fill="#0BA5BE" class="pulse pulse-delay-1" />
+                    <circle cx="80" cy="50" r="8" fill="#0BA5BE" class="pulse pulse-delay-2" />
+                    <circle cx="35" cy="80" r="8" fill="#0BA5BE" class="pulse pulse-delay-3" />
+                    <circle cx="65" cy="80" r="8" fill="#0BA5BE" class="pulse pulse-delay-4" />
+                    
+                    <!-- Conexiones -->
+                    <line x1="50" y1="20" x2="20" y2="50" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="50" y1="20" x2="80" y2="50" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="20" y1="50" x2="35" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="20" y1="50" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="80" y1="50" x2="35" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="80" y1="50" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    <line x1="35" y1="80" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                    
+                    <!-- Nodos secundarios -->
+                    <circle cx="50" cy="35" r="4" fill="white" opacity="0.8" />
+                    <circle cx="35" cy="50" r="4" fill="white" opacity="0.8" />
+                    <circle cx="65" cy="50" r="4" fill="white" opacity="0.8" />
+                    <circle cx="50" cy="65" r="4" fill="white" opacity="0.8" />
+                    
+                    <!-- Círculo central -->
+                    <circle cx="50" cy="50" r="18" fill="#0BA5BE" stroke="white" stroke-width="2.5" />
+                    
+                    <!-- Texto CMSR92 -->
+                    <text x="120" y="62" font-family="monospace" font-size="42" font-weight="bold" fill="url(#textGradientLarge)" text-anchor="start">CMSR92</text>
+                </svg>
+            </div>
+            <nav class="nav">
+                <a href="#experience" class="nav-link" data-testid="link-header-experience">Sobre Mí</a>
+                <a href="#projects" class="nav-link" data-testid="link-header-projects">Proyectos</a>
+                <a href="#skills" class="nav-link" data-testid="link-header-skills">Habilidades</a>
+                <a href="#education" class="nav-link" data-testid="link-header-education">Educación</a>
+                <a href="#contact" class="nav-link" data-testid="link-header-contact">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="images/Hero_background_data_visualization_7936a866.png" alt="Data visualization background" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Animated particles -->
+        <div class="particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">Carlos Manuel Suárez Rivero</h1>
+            <h2 class="hero-subtitle">Data Scientist & AI Specialist</h2>
+            <p class="hero-description">
+                Estudiante de <span class="highlight">Ciencia de Datos</span> (UOC) especializado en
+                <span class="highlight">Machine Learning</span>,
+                <span class="highlight">Deep Learning</span>,
+                <span class="highlight">Business Intelligence</span> y
+                <span class="highlight">Big Data</span>.
+                Apasionado por transformar datos complejos en insights accionables mediante análisis avanzado, modelos predictivos y visualizaciones interactivas.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-testid="button-view-projects">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-outline" data-testid="button-contact">Contactar</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener noreferrer" class="social-link" data-testid="link-github" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener noreferrer" class="social-link" data-testid="link-linkedin" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+            </div>
+            
+            <a href="#projects" class="scroll-indicator" data-testid="button-scroll-down">
+                <span>Descubre más</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Apasionado por la tecnología y los datos, en constante aprendizaje y evolución</p>
+            </div>
+            
+            <!-- Personal Introduction -->
+            <div class="about-intro">
+                <p class="about-intro-text">
+                    Apasionado por la tecnología y el poder transformador de los datos. Me fascina descubrir patrones ocultos, 
+                    construir modelos predictivos y crear visualizaciones que cuenten historias impactantes con Business Intelligence. 
+                    Cada proyecto es una oportunidad para aprender algo nuevo y enfrentar desafíos que me impulsan a crecer profesionalmente.
+                </p>
+                <p class="about-intro-text">
+                    Mi objetivo es aplicar mis conocimientos en Data Science, Machine Learning, Business Intelligence e Inteligencia Artificial 
+                    para resolver problemas reales y generar valor en organizaciones que apuesten por la innovación y la toma de 
+                    decisiones basada en datos. Con experiencia profesional en otros ámbitos, estoy enfocado en desarrollar mi carrera 
+                    en el campo de datos, donde puedo aportar mi entusiasmo, mis habilidades técnicas y mi capacidad de aprendizaje continuo.
+                </p>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- About Item 1 -->
+                <div class="experience-card" data-testid="card-experience-0">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Machine Learning & Data Science</h3>
+                            <p class="experience-description">
+                                Formación continua en algoritmos de machine learning supervisado y no supervisado, incluyendo regresión, clasificación, clustering y reducción de dimensionalidad. Conocimientos en redes neuronales, deep learning y procesamiento de lenguaje natural (NLP). Experiencia práctica con bibliotecas como Scikit-learn, TensorFlow, Pandas y NumPy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Item 2 -->
+                <div class="experience-card" data-testid="card-experience-1">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Business Intelligence & Visualización</h3>
+                            <p class="experience-description">
+                                Competencias en diseño y desarrollo de dashboards interactivos con Power BI, Tableau y Streamlit. Creación de visualizaciones efectivas para comunicar insights de datos complejos. Dominio de herramientas de análisis exploratorio y técnicas de storytelling con datos para apoyar la toma de decisiones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Item 3 -->
+                <div class="experience-card" data-testid="card-experience-2">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Gestión de Datos & Cloud</h3>
+                            <p class="experience-description">
+                                Conocimientos en bases de datos relacionales (SQL Server, PostgreSQL, MySQL) y NoSQL (MongoDB). Fundamentos de Big Data con Apache Spark y Databricks. Familiaridad con plataformas cloud (Azure, Google Cloud) y herramientas de versionado y despliegue (Git, Docker). Capacidad para diseñar pipelines de datos eficientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos & Dashboards</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Dashboards interactivos y proyectos de Data Science implementados en producción</p>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card" data-testid="card-project-0">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="images/Dashboard_project_preview_1_15a376d8.png" alt="E-Commerce Global Analytics Dashboard">
+                            <div class="project-image-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Global Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Dashboard interactivo desarrollado con Streamlit para análisis completo de ventas de e-commerce global. Incluye análisis de ventas por país, categorías de producto, tendencias temporales, análisis de clientes y métricas de rendimiento en tiempo real. Implementa visualizaciones avanzadas con Plotly y análisis estadísticos para identificar oportunidades de crecimiento.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge" data-testid="badge-tech-0-0">Python</span>
+                                <span class="tech-badge" data-testid="badge-tech-0-1">Streamlit</span>
+                                <span class="tech-badge" data-testid="badge-tech-0-2">Pandas</span>
+                                <span class="tech-badge" data-testid="badge-tech-0-3">Plotly</span>
+                                <span class="tech-badge" data-testid="badge-tech-0-4">SQL</span>
+                            </div>
+                            <a href="https://ecommers-global.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-testid="button-view-project-0">
+                                Ver Dashboard en Vivo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-placeholder">
+                    <div class="placeholder-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                    </div>
+                    <h3 class="placeholder-title">Más Proyectos Próximamente</h3>
+                    <p class="placeholder-description">
+                        Continuamente trabajo en nuevos proyectos de Data Science, Machine Learning y Business Intelligence. Mantente atento para ver nuevas adiciones al portfolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Stack tecnológico completo en Data Science, IA, Business Intelligence y Big Data</p>
+            </div>
+
+            <!-- Technology Badges -->
+            <div class="tech-logos-section">
+                <h3 class="tech-logos-title">Tecnologías & Herramientas</h3>
+                <div class="tech-logos-grid">
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Python</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">TensorFlow</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Scikit-learn</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">PyTorch</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Power BI</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Tableau</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Apache Spark</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Databricks</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Azure</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">GCP</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Docker</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Kubernetes</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">SQL</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">MongoDB</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Git</div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-badge">Streamlit</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card" data-testid="card-skill-0">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3 class="skill-title">Lenguajes de Programación</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">R</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">DAX</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">M (Power Query)</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card" data-testid="card-skill-1">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+                        </div>
+                        <h3 class="skill-title">Machine Learning & IA</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Deep Learning</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card" data-testid="card-skill-2">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+                        </div>
+                        <h3 class="skill-title">Business Intelligence</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Tableau</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Google Looker Studio</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Qlik Sense</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card" data-testid="card-skill-3">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                        </div>
+                        <h3 class="skill-title">Visualización de Datos</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Plotly</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Streamlit</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">D3.js</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card" data-testid="card-skill-4">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                        </div>
+                        <h3 class="skill-title">Bases de Datos & Big Data</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">SQL Server</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Apache Spark</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Databricks</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card" data-testid="card-skill-5">
+                    <div class="skill-header">
+                        <div class="skill-icon skill-icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </div>
+                        <h3 class="skill-title">Herramientas & Cloud</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Git/GitHub</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Azure</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Google Cloud</span>
+                            <span class="skill-level skill-level-advanced">Avanzado</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Excel Avanzado</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                        <div class="skill-badge-wrapper">
+                            <span class="skill-badge">Jupyter</span>
+                            <span class="skill-level skill-level-expert">Experto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formación & Certificaciones</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Educación continua en las últimas tecnologías de Data Science e IA</p>
+            </div>
+            
+            <div class="education-container">
+                <!-- Education items -->
+                <div class="education-card" data-testid="card-education-0">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">Grado en Ciencia de Datos Aplicada</h3>
+                            <span class="education-period">2024 - Actualidad</span>
+                        </div>
+                        <p class="education-institution">Universitat Oberta de Catalunya (UOC)</p>
+                        <p class="education-description">Formación integral en Data Science, Machine Learning y análisis estadístico avanzado</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-testid="card-education-1">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">Máster en Big Data y Business Intelligence (60 ECTS)</h3>
+                            <span class="education-period">2024</span>
+                        </div>
+                        <p class="education-institution">ENEB - Universidad Isabel I de Castilla</p>
+                        <p class="education-description">Especialización en análisis de grandes volúmenes de datos y visualización estratégica</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-testid="card-education-2">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">MBA - Máster en Administración y Dirección de Empresas</h3>
+                            <span class="education-period">2024</span>
+                        </div>
+                        <p class="education-institution">ENEB - Universidad Isabel I de Castilla</p>
+                        <p class="education-description">Gestión empresarial y toma de decisiones basadas en datos</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-testid="card-education-3">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">Máster en Project Management (60 ECTS)</h3>
+                            <span class="education-period">2024</span>
+                        </div>
+                        <p class="education-institution">ENEB - Universidad Isabel I de Castilla</p>
+                        <p class="education-description">Gestión de proyectos con metodologías ágiles y tradicionales</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-testid="card-education-4">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">Curso de Programación en Python (75 horas)</h3>
+                            <span class="education-period">2025</span>
+                        </div>
+                        <p class="education-institution">Universidad Internacional de La Rioja (UNIR)</p>
+                        <p class="education-description">Fundamentos avanzados de Python para Data Science</p>
+                    </div>
+                </div>
+
+                <div class="education-card" data-testid="card-education-5">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 class="education-title">Técnico Superior en Automatización y Robótica Industrial</h3>
+                            <span class="education-period">2014 - 2016</span>
+                        </div>
+                        <p class="education-institution">I.E.S Santa María de Guía</p>
+                        <p class="education-description">Programación de PLCs, lógica de sistemas y mantenimiento industrial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">¿Tienes un proyecto en mente? Hablemos</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <!-- 
+                    ⚠️ IMPORTANTE: CONFIGURAR FORMSPREE ⚠️
+                    
+                    Para que el formulario funcione, debes:
+                    1. Crear cuenta GRATIS en https://formspree.io
+                    2. Crear un nuevo formulario y obtener tu Form ID
+                    3. Reemplazar "YOUR_FORM_ID" abajo con tu ID real
+                    
+                    Ejemplo: Si tu Form ID es "mnnqkpdg", la línea debe quedar:
+                    <form action="https://formspree.io/f/mnnqkpdg" method="POST" ...>
+                    
+                    Ver README.md para instrucciones detalladas
+                    -->
+                    <form action="https://formspree.io/f/xvgvzgnr" method="POST" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" required class="form-input" placeholder="Tu nombre" data-testid="input-name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="tu@email.com" data-testid="input-email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" required rows="5" class="form-textarea" placeholder="Cuéntame sobre tu proyecto..." data-testid="input-message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="button-submit">
+                            Enviar Mensaje
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message (hidden by default) -->
+                    <div id="successMessage" style="display: none; text-align: center; padding: 40px 20px;">
+                        <div style="background: linear-gradient(135deg, #0BA5BE 0%, #0D7C8E 100%); color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(11, 165, 190, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 20px; display: block;">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <h3 style="margin: 0 0 10px 0; font-size: 24px; font-weight: 700;">¡Mensaje Enviado!</h3>
+                            <p style="margin: 0; font-size: 16px; opacity: 0.95;">Gracias por contactarme. Te responderé en un plazo máximo de 48 horas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Información de Contacto</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon contact-icon-linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div>
+                                <p class="contact-item-label">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener noreferrer" class="contact-item-link" data-testid="link-contact-linkedin">
+                                    linkedin.com/in/cmsr92
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon contact-icon-github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            </div>
+                            <div>
+                                <p class="contact-item-label">GitHub</p>
+                                <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener noreferrer" class="contact-item-link" data-testid="link-contact-github">
+                                    github.com/carlosmsr92
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-card">
+                        <h4 class="privacy-title">Privacidad y Respuesta</h4>
+                        <p class="privacy-text">
+                            Por motivos de privacidad, utiliza el formulario de contacto para enviarme un mensaje.
+                            Me comprometo a responder en un plazo máximo de 48 horas.
+                            Para proyectos urgentes, también puedes contactarme por LinkedIn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <svg class="logo-footer" viewBox="0 0 280 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="textGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color: #FFFFFF; stop-opacity: 1" />
+                                <stop offset="50%" style="stop-color: #7DFFFF; stop-opacity: 1" />
+                                <stop offset="100%" style="stop-color: #00D4FF; stop-opacity: 1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="20" r="8" fill="#0BA5BE" />
+                        <circle cx="20" cy="50" r="8" fill="#0BA5BE" />
+                        <circle cx="80" cy="50" r="8" fill="#0BA5BE" />
+                        <circle cx="35" cy="80" r="8" fill="#0BA5BE" />
+                        <circle cx="65" cy="80" r="8" fill="#0BA5BE" />
+                        <line x1="50" y1="20" x2="20" y2="50" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="50" y1="20" x2="80" y2="50" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="20" y1="50" x2="35" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="20" y1="50" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="80" y1="50" x2="35" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="80" y1="50" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <line x1="35" y1="80" x2="65" y2="80" stroke="#0BA5BE" stroke-width="2" opacity="0.6" />
+                        <circle cx="50" cy="35" r="4" fill="white" opacity="0.8" />
+                        <circle cx="35" cy="50" r="4" fill="white" opacity="0.8" />
+                        <circle cx="65" cy="50" r="4" fill="white" opacity="0.8" />
+                        <circle cx="50" cy="65" r="4" fill="white" opacity="0.8" />
+                        <circle cx="50" cy="50" r="18" fill="#0BA5BE" stroke="white" stroke-width="2.5" />
+                        <text x="120" y="62" font-family="monospace" font-size="42" font-weight="bold" fill="url(#textGradientFooter)" text-anchor="start">CMSR92</text>
+                    </svg>
+                    <p class="footer-subtitle">Data Scientist & AI Specialist</p>
+                    <p class="footer-description">
+                        Estudiante de Ciencia de Datos especializado en transformar datos en insights accionables mediante Machine Learning, Deep Learning y Business Intelligence.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Enlaces Rápidos</h3>
+                    <ul class="footer-nav">
+                        <li><a href="#experience" class="footer-link" data-testid="link-footer-experience">Sobre Mí</a></li>
+                        <li><a href="#projects" class="footer-link" data-testid="link-footer-projects">Proyectos</a></li>
+                        <li><a href="#skills" class="footer-link" data-testid="link-footer-skills">Habilidades</a></li>
+                        <li><a href="#education" class="footer-link" data-testid="link-footer-education">Educación</a></li>
+                        <li><a href="#contact" class="footer-link" data-testid="link-footer-contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social -->
+                <div class="footer-social-section">
+                    <h3 class="footer-heading">Conecta Conmigo</h3>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener noreferrer" class="footer-social-link" data-testid="link-footer-github" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener noreferrer" class="footer-social-link" data-testid="link-footer-linkedin" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                    <p class="footer-contact-text">
+                        Usa el formulario de contacto para enviarme un mensaje
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="currentYear"></span> CMSR92. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

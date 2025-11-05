@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Formspree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background: #0BA5BE;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #098999;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Formspree Simple</h1>
+    
+    <div class="info">
+        <strong>Instrucciones:</strong>
+        <ol>
+            <li>Llena el formulario con datos de prueba</li>
+            <li>Click en "Send"</li>
+            <li>Si es tu primer envío, Formspree te redirigirá a una página de confirmación</li>
+            <li>Revisa tu email y confirma</li>
+            <li>Después vuelve y prueba de nuevo</li>
+        </ol>
+    </div>
+
+    <!-- Código EXACTO de Formspree sin JavaScript -->
+    <form
+      action="https://formspree.io/f/xvgvzgnr"
+      method="POST"
+    >
+      <label>
+        Your name:
+        <input type="text" name="name" required>
+      </label>
+      
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      
+      <label>
+        Your message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      
+      <button type="submit">Send</button>
+    </form>
+    
+    <p style="text-align: center; margin-top: 20px; color: #666;">
+        Este es un formulario de prueba sin JavaScript - submit tradicional
+    </p>
+</body>
+</html>
