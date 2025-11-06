@@ -1,0 +1,28 @@
+# Archivos de desarrollo
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Scripts de desarrollo
+cleanup.ps1
+
+# Docker (no necesario para GitHub Pages)
+Dockerfile
+docker-compose.yml
+nginx.conf
+.dockerignore
+DEPLOY_GUIDE.md
+
+# Node modules (si los hubiera)
+node_modules/
+package-lock.json
