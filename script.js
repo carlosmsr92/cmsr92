@@ -182,25 +182,37 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// ========== Parallax Effect for Hero Section ==========
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        hero.style.opacity = 1 - scrolled / (window.innerHeight * 0.8);
-    }
-});
+// ========== Parallax Effect for Hero Section (Optimizado - Sin superposición) ==========
+let ticking = false;
+const isMobile = window.innerWidth <= 768;
 
-// ========== Parallax Effect for Hero ==========
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        hero.style.opacity = 1 - scrolled / (window.innerHeight * 0.8);
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            
+            if (hero && scrolled < window.innerHeight) {
+                // NO aplicar translateY para evitar superposiciones
+                // Solo manejar la opacidad de forma suave
+                
+                const fadeStart = window.innerHeight * 0.6; // Empieza a 60% del viewport
+                const fadeEnd = window.innerHeight * 0.95; // Termina a 95% del viewport
+                
+                if (scrolled < fadeStart) {
+                    hero.style.opacity = '1';
+                } else if (scrolled >= fadeStart && scrolled < fadeEnd) {
+                    const fadeProgress = (scrolled - fadeStart) / (fadeEnd - fadeStart);
+                    hero.style.opacity = 1 - (fadeProgress * 0.2); // Máximo 20% de transparencia
+                } else {
+                    hero.style.opacity = '0.8';
+                }
+            }
+            
+            ticking = false;
+        });
+        
+        ticking = true;
     }
 });
 
