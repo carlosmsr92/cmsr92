@@ -1,4 +1,4 @@
-# 🚀 Portfolio Profesional - Carlos Muñoz
+# 🚀 Portfolio Profesional - Carlos Manuel Suárez Rivero
 
 Portfolio profesional de Data Science, Machine Learning, Business Intelligence y AI desarrollado con HTML5, CSS3 y JavaScript vanilla.
 
