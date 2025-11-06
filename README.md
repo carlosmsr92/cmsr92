@@ -2,7 +2,7 @@
 
 Portfolio profesional de Data Science, Machine Learning, Business Intelligence y AI desarrollado con HTML5, CSS3 y JavaScript vanilla.
 
-## 🌐 Enlace Directo al Portafolio
+## 🌐 Enlace Directo al Portfolio
 
 🔗 [Ver Portfolio](https://carlosmsr92.github.io/cmsr92/)
 
