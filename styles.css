@@ -1841,3 +1841,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 !important;
   }
 }
+@media (max-width: 768px) {
+  .project-actions {
+    display: flex !important;
+    flex-direction: row !important;      /* Horizontal (como en desktop) */
+    justify-content: center !important;  /* Centrado horizontal */
+    align-items: center !important;
+    gap: var(--spacing-sm) !important;   /* Separación entre los dos botones */
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .project-actions .btn {
+    flex: 1 1 45%;
+    max-width: 160px;            /* Limita tamaño y evita que se salgan */
+    text-align: center !important;
+    margin: 0 !important;
+    min-width: 110px;
+  }
+}
