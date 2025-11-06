@@ -1,14 +1,14 @@
-# 🚀 Portfolio Profesional - Carlos Manuel Suárez Rivero
+# 🚀 Portfolio Profesional - CMSR92
 
 Portfolio profesional de Data Science, Machine Learning, Business Intelligence y AI desarrollado con HTML5, CSS3 y JavaScript vanilla.
 
-## 🌐 Demo en Vivo
+## 🌐 Portafolio en Vivo
 
-🔗 [Ver Portfolio](https://cmsr92.github.io/portfolio)
+🔗 [Ver Portfolio](https://carlosmsr92.github.io/cmsr92/)
 
 ## ✨ Características
 
-- 🎨 Diseño moderno y profesional con colores de marca (#0CA5BE, #57CDDF)
+- 🎨 Diseño moderno y profesional con colores de marca
 - 🌓 Tema claro/oscuro adaptativo
 - 📱 Diseño responsive (mobile-first)
 - ⚡ Animaciones suaves y transiciones
@@ -28,67 +28,14 @@ Portfolio profesional de Data Science, Machine Learning, Business Intelligence y
 
 ```
 cmsr92/
-├── index_v2.html          # Página principal
-├── styles_v2.css          # Estilos
-├── script_v2.js           # JavaScript
+├── index.html          # Página principal
+├── styles.css          # Estilos
+├── script.js           # JavaScript
 ├── images/                # Assets y placeholders
 │   ├── cinema-dashboard.svg
 │   └── ecommerce-analytics.svg
 └── brand-assets/          # Logos y recursos de marca
 ```
-
-## 🚀 Despliegue en GitHub Pages
-
-### Paso 1: Crear repositorio en GitHub
-```bash
-# En tu terminal
-cd C:\Users\Carlos\OneDrive\Desktop\cmsr92
-git init
-git add .
-git commit -m "Initial commit: Portfolio profesional V2"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/portfolio.git
-git push -u origin main
-```
-
-### Paso 2: Activar GitHub Pages
-1. Ve a tu repositorio en GitHub
-2. Settings → Pages
-3. Source: "Deploy from a branch"
-4. Branch: "main" → carpeta "/ (root)"
-5. Save
-
-### Paso 3: Renombrar archivos (automático)
-GitHub Pages buscará automáticamente `index.html` como página principal.
-
-**Opción A: Renombrar manualmente**
-```bash
-mv index_v2.html index.html
-mv styles_v2.css styles.css
-mv script_v2.js script.js
-```
-Luego actualiza las referencias en `index.html`:
-- `<link href="styles.css">`
-- `<script src="script.js">`
-
-**Opción B: Usar los archivos v2 directamente**
-Configura en Settings → Pages → "Index document" como `index_v2.html` (si disponible en tu plan)
-
-Tu portfolio estará disponible en:
-```
-https://TU_USUARIO.github.io/portfolio
-```
-
-## 📝 Personalización
-
-### Colores de marca
-Los colores están definidos en `styles_v2.css`:
-```css
---color-primary: #0CA5BE;
---color-primary-light: #57CDDF;
---color-gradient: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 50%, #0BA5BE 100%);
-```
-
 ### Contacto
 Actualiza los enlaces en `index_v2.html`:
 - Email: `mailto:tu@email.com`
@@ -106,24 +53,15 @@ Reemplaza los placeholders SVG con capturas reales:
 <!-- Por esto -->
 <img src="images/proyecto-screenshot.png" alt="Proyecto">
 ```
-
-## 🎯 Próximos Pasos
-
-- [ ] Tomar screenshots de proyectos reales
-- [ ] Actualizar enlaces a repositorios GitHub
-- [ ] Añadir dominio personalizado (cuando esté disponible)
-- [ ] Implementar analytics (Google Analytics o Plausible)
-- [ ] Añadir animaciones de fondo en hero (opcional)
-
 ## 📄 Licencia
 
-© 2025 Carlos Muñoz. Todos los derechos reservados.
+© 2025 Carlos Manuel Suárez Rivero. Todos los derechos reservados.
 
 ## 📧 Contacto
 
-- **Email**: carlos@example.com
+- **Email**: cmsr92@uoc.edu
 - **LinkedIn**: [linkedin.com/in/cmsr92](https://linkedin.com/in/cmsr92)
-- **GitHub**: [github.com/cmsr92](https://github.com/cmsr92)
+- **GitHub**: [github.com/cmsr92](https://github.com//carlosmsr92)
 
 ---
 
