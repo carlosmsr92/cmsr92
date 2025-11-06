@@ -2,7 +2,7 @@
 
 Portfolio profesional de Data Science, Machine Learning, Business Intelligence y AI desarrollado con HTML5, CSS3 y JavaScript vanilla.
 
-## 🌐 Portafolio en Vivo
+## 🌐 Enlace Directo al Portafolio
 
 🔗 [Ver Portfolio](https://carlosmsr92.github.io/cmsr92/)
 
@@ -37,7 +37,7 @@ cmsr92/
 └── brand-assets/          # Logos y recursos de marca
 ```
 ### Contacto
-Actualiza los enlaces en `index_v2.html`:
+Actualiza los enlaces en `index.html`:
 - Email: `mailto:tu@email.com`
 - LinkedIn: `https://linkedin.com/in/tu-perfil`
 - GitHub: `https://github.com/tu-usuario`
