@@ -13,14 +13,18 @@
     --color-primary-dark: #0BA5BE;
     --gradient-primary: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 50%, #0BA5BE 100%);
     --gradient-primary-hover: linear-gradient(135deg, #0BA5BE 0%, #0CA5BE 50%, #57CDDF 100%);
+    /* Variantes accesibles: el turquesa de marca da 2,9:1 con blanco; estas superan 4,5:1 sobre fondo claro */
+    --color-primary-strong: #087F93;
+    --color-primary-strong-hover: #077585;
+    --gradient-text: linear-gradient(135deg, #077585 0%, #0A8CA2 100%);
     
     /* Light Mode */
     --bg-primary: #FFFFFF;
     --bg-secondary: #F8FAFB;
     --bg-tertiary: #F3F4F6;
     --text-primary: #1F2937;
-    --text-secondary: #6B7280;
-    --text-tertiary: #9CA3AF;
+    --text-secondary: #4B5563;
+    --text-tertiary: #6B7280;
     --border-color: #E5E7EB;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -54,6 +58,7 @@
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
+        --gradient-text: var(--gradient-primary);
         --bg-primary: #0A0E1A;
         --bg-secondary: #141824;
         --bg-tertiary: #1E293B;
@@ -69,6 +74,7 @@
 }
 
 [data-theme="dark"] {
+    --gradient-text: var(--gradient-primary);
     --bg-primary: #0A0E1A;
     --bg-secondary: #141824;
     --bg-tertiary: #1E293B;
@@ -80,6 +86,22 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Tema claro elegido con el botón: sin este bloque, con el sistema en oscuro el botón no podía volver a claro */
+[data-theme="light"] {
+    --gradient-text: linear-gradient(135deg, #077585 0%, #0A8CA2 100%);
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8FAFB;
+    --bg-tertiary: #F3F4F6;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+    --text-tertiary: #6B7280;
+    --border-color: #E5E7EB;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 /* ========== Base Styles ========== */
@@ -118,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-    background: var(--gradient-primary);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -204,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: var(--spacing-sm);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .logo-icon {
@@ -390,7 +413,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: slideUp 0.6s ease 0.2s backwards;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .hero-description {
@@ -503,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 .stat-number {
     font-size: 1.25rem;
     font-weight: 700;
-    background: var(--gradient-primary);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -539,13 +561,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--color-primary-strong);
     color: white;
     box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-    background: var(--gradient-primary-hover);
+    background: var(--color-primary-strong-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -891,7 +913,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
-    background: var(--gradient-primary);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1494,7 +1516,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: var(--spacing-md);
         word-wrap: break-word;
         overflow-wrap: break-word;
-        hyphens: auto;
     }
     
     .hero-description {
@@ -1858,4 +1879,107 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 !important;
     min-width: 110px;
   }
+}
+
+/* ========== Habilidades agrupadas ========== */
+.skill-category .project-tags {
+    margin-bottom: var(--spacing-md);
+}
+
+.skill-used {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.skill-used a {
+    color: var(--color-primary-strong);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.skill-used a:hover {
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .skill-used a {
+    color: var(--color-primary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .skill-used a {
+        color: var(--color-primary-light);
+    }
+}
+
+/* ========== Capturas de proyecto ========== */
+/* La captura se muestra entera (16:10) dentro de un marco, en vez de recortarse para llenar la columna */
+.project-card.featured .project-image {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-lg);
+}
+
+.project-card.featured .project-image img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-card.featured .project-badge {
+    top: calc(var(--spacing-lg) + var(--spacing-sm));
+    left: calc(var(--spacing-lg) + var(--spacing-sm));
+}
+
+.about-highlights {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+    .project-card.featured .project-image {
+        padding: var(--spacing-md);
+    }
+}
+
+
+/* ========== Ajustes móvil ========== */
+.btn {
+    white-space: nowrap;
+}
+
+.project-actions {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 8rem;  /* deja sitio al botón de tema, que es fijo arriba a la derecha */
+    }
+    .hero-badge {
+        font-size: 0.8125rem;
+        text-align: left;
+    }
+    .project-content {
+        padding: var(--spacing-md);
+    }
+    .project-highlights {
+        padding: var(--spacing-md);
+    }
+    /* Las reglas móviles anteriores añadían relleno a la tarjeta y limitaban los botones a 160 px */
+    .project-card {
+        padding: 0;
+    }
+    .project-actions {
+        flex-wrap: wrap !important;
+    }
+    .project-actions .btn {
+        flex: 1 1 auto;
+        max-width: none;
+        justify-content: center;
+    }
 }

@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Manuel Suárez Rivero - Data Scientist & Analytics Developer</title>
-    <meta name="description" content="Portfolio profesional de Data Science, Machine Learning y desarrollo de dashboards interactivos. Especializado en análisis de datos, visualización y optimización de negocios.">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Carlos Manuel Suárez Rivero - Data Scientist & Analytics Developer">
-    <meta property="og:description" content="Transformo datos en decisiones estratégicas mediante análisis avanzado, machine learning y visualizaciones interactivas.">
+    <title>Carlos Manuel Suárez Rivero · Analista de datos</title>
+    <meta name="description" content="Portfolio de Carlos Manuel Suárez Rivero (CMSR92), analista de datos: proyectos de machine learning, calidad de datos y dashboards interactivos desplegados en Streamlit.">
+    <meta name="author" content="Carlos Manuel Suárez Rivero">
+    <link rel="canonical" href="https://carlosmsr92.github.io/cmsr92/">
+    <meta name="theme-color" content="#0A0E1A">
+
+    <!-- Vista previa al compartir (LinkedIn, WhatsApp, X) -->
     <meta property="og:type" content="website">
-    
+    <meta property="og:url" content="https://carlosmsr92.github.io/cmsr92/">
+    <meta property="og:title" content="Carlos Manuel Suárez Rivero · Analista de datos">
+    <meta property="og:description" content="Proyectos de datos de extremo a extremo: calidad de datos, machine learning y dashboards interactivos.">
+    <meta property="og:image" content="https://carlosmsr92.github.io/cmsr92/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/CMSR92-symbol-only.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar entre tema claro y oscuro">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
     </button>
@@ -30,17 +38,14 @@
     <header class="header" id="header">
         <div class="container">
             <nav class="navbar">
-                <div class="logo-container">
-                    <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Círculo central del hexágono (aumentado y con stroke) -->
+                <a href="#hero" class="logo-container" aria-label="Inicio">
+                    <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <circle cx="50" cy="50" r="13" class="node-center" stroke="#FFFFFF" stroke-width="2.5" />
-                        <!-- Nodos exteriores -->
                         <circle cx="50" cy="30" r="6" class="node" />
                         <circle cx="30" cy="50" r="6" class="node node-delay-1" />
                         <circle cx="70" cy="50" r="6" class="node node-delay-2" />
                         <circle cx="40" cy="70" r="6" class="node node-delay-3" />
                         <circle cx="60" cy="70" r="6" class="node node-delay-4" />
-                        <!-- Conexiones -->
                         <line x1="50" y1="30" x2="30" y2="50" class="connection" />
                         <line x1="50" y1="30" x2="70" y2="50" class="connection" />
                         <line x1="30" y1="50" x2="40" y2="70" class="connection" />
@@ -49,18 +54,18 @@
                         <line x1="70" y1="50" x2="60" y2="70" class="connection" />
                     </svg>
                     <span class="logo-text">CMSR<span class="gradient-text">92</span></span>
-                </div>
-                
+                </a>
+
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero" class="nav-link active">Inicio</a></li>
-                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
-                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
                     <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                    <li><a href="#education" class="nav-link">Educación</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#education" class="nav-link">Formación</a></li>
                     <li><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
-                
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -69,101 +74,76 @@
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-badge">
-                        <span class="badge-icon">👋</span>
-                        <span>Bienvenido a mi portfolio</span>
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <span>Analista de datos · Grado en Ciencia de Datos (UOC)</span>
                     </div>
                     <h1 class="hero-title">
-                        Transformo <span class="gradient-text">datos</span> en 
-                        <span class="gradient-text">decisiones</span> estratégicas
+                        Transformo <span class="gradient-text">datos</span> en
+                        <span class="gradient-text">decisiones</span>
                     </h1>
                     <p class="hero-description">
-                        Data Scientist especializado en análisis avanzado, machine learning y desarrollo 
-                        de dashboards interactivos. Convierto información compleja en insights accionables 
-                        que impulsan el crecimiento del negocio.
+                        Soy Carlos Manuel Suárez Rivero. Construyo productos de datos de principio a fin: limpieza y
+                        calidad de los datos, modelos de machine learning evaluados con rigor y dashboards que se
+                        entienden sin explicación.
                     </p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i>
-                            <span>Ver Proyectos</span>
+                            <i class="fas fa-folder-open" aria-hidden="true"></i>
+                            <span>Ver proyectos</span>
                         </a>
                         <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contáctame</span>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>Contactar</span>
                         </a>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/carlcosm92" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/in/carlos-manuel-suarez-rivero" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="mailto:carlcosm92@gmail.com" aria-label="Email" class="social-link">
+                        <a href="mailto:cmsr92@uoc.edu" aria-label="Email" class="social-link">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="hero-visual">
                     <div class="stats-grid">
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
+                            <div class="stat-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
                             <div class="stat-content">
-                                <h3 class="stat-number">60+</h3>
-                                <p class="stat-label">Tecnologías Dominadas</p>
+                                <h2 class="stat-number">3</h2>
+                                <p class="stat-label">Proyectos desplegados</p>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
+                            <div class="stat-icon"><i class="fas fa-vial-circle-check" aria-hidden="true"></i></div>
                             <div class="stat-content">
-                                <h3 class="stat-number">ML/DL</h3>
-                                <p class="stat-label">Deep Learning & IA</p>
+                                <h2 class="stat-number">73</h2>
+                                <p class="stat-label">Tests automáticos</p>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
+                            <div class="stat-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
                             <div class="stat-content">
-                                <h3 class="stat-number">BI</h3>
-                                <p class="stat-label">Power BI • Tableau • Looker</p>
+                                <h2 class="stat-number">Python · SQL</h2>
+                                <p class="stat-label">Lenguajes principales</p>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
+                            <div class="stat-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
                             <div class="stat-content">
-                                <h3 class="stat-number">Big Data</h3>
-                                <p class="stat-label">Spark • Databricks • SQL</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-chart-area"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h3 class="stat-number">Forecast</h3>
-                                <p class="stat-label">ARIMA • Prophet • Series</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h3 class="stat-number">Cloud</h3>
-                                <p class="stat-label">Azure • GCP • MLOps</p>
+                                <h2 class="stat-number">ML + BI</h2>
+                                <p class="stat-label">Modelos y dashboards</p>
                             </div>
                         </div>
                     </div>
@@ -176,705 +156,43 @@
     <section id="about" class="section about">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-user"></i>
-                    Sobre Mí
-                </span>
-                <h2 class="section-title">De la Automatización Industrial a la Ciencia de Datos</h2>
-                <p class="section-description">
-                    Profesional autodidacta en transición hacia Data Science & IA, con experiencia técnica y pasión por transformar datos en valor
-                </p>
+                <span class="section-badge"><i class="fas fa-user" aria-hidden="true"></i> Sobre mí</span>
+                <h2 class="section-title">De la automatización industrial a los datos</h2>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-paragraph">
-                        Soy <strong>Carlos Manuel Suárez Rivero</strong>, un profesional en <strong>transformación de carrera</strong> hacia 
-                        el mundo de la <strong>Ciencia de Datos, Machine Learning e Inteligencia Artificial</strong>. Mi trayectoria comenzó 
-                        en la automatización y robótica industrial, donde desarrollé una mentalidad analítica y orientada a la resolución 
-                        de problemas complejos mediante tecnología.
+                        Vengo de la <strong>automatización industrial</strong>: soy técnico superior en Automatización y
+                        Robótica y he programado PLCs en planta. Hoy curso el <strong>Grado en Ciencia de Datos Aplicada
+                        en la UOC</strong> y he terminado un máster en Big Data y Business Intelligence.
                     </p>
                     <p class="about-paragraph">
-                        <strong>Autodidacta por naturaleza</strong>, he dedicado los últimos años a formarme intensivamente en el ecosistema 
-                        de datos: desde fundamentos de estadística y programación en Python, hasta arquitecturas de Deep Learning, NLP y 
-                        optimización matemática. Mi formación académica incluye un <strong>Grado en Ciencia de Datos Aplicada (UOC)</strong>, 
-                        <strong>Máster en Big Data y Business Intelligence</strong>, <strong>MBA</strong> y <strong>Máster en Project Management</strong>, 
-                        complementados con más de <strong>60 tecnologías dominadas</strong> a través de aprendizaje continuo y proyectos reales.
+                        Me gusta trabajar de extremo a extremo: entender el problema de negocio, preparar los datos y
+                        comprobar su calidad, elegir el modelo y evaluarlo con métricas honestas, y presentar el resultado
+                        en un dashboard útil para quien decide.
                     </p>
                     <p class="about-paragraph">
-                        Lo que me define es mi <strong>pasión genuina por los datos y su impacto</strong>. No me interesa solo aplicar modelos, 
-                        sino entender el negocio, traducir problemas complejos a soluciones analíticas elegantes, y crear productos de datos 
-                        que generen valor medible. Mi enfoque combina rigor técnico con visión estratégica, permitiéndome diseñar desde 
-                        <strong>dashboards interactivos</strong> con Streamlit y Plotly, hasta <strong>modelos de optimización de precios</strong> 
-                        con simulaciones Monte Carlo y algoritmos de segmentación avanzada.
+                        Busco mi <strong>primer puesto en datos</strong> (análisis, BI o ciencia de datos) en un equipo
+                        donde aprender rápido y aportar desde el primer día.
                     </p>
-                    <p class="about-paragraph">
-                        Actualmente trabajo en proyectos de <strong>optimización estratégica</strong>, <strong>forecasting con series temporales</strong>, 
-                        <strong>clustering de clientes</strong> y <strong>análisis predictivo</strong>. Mi stack tecnológico abarca desde Python 
-                        (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch) hasta herramientas de BI empresariales (Power BI, Tableau), 
-                        pasando por MLOps (MLflow, Docker, Kubernetes) y cloud computing (Azure, GCP).
-                    </p>
-                    <p class="about-paragraph">
-                        <strong>Mi objetivo</strong>: integrarme en equipos donde pueda aportar mi combinación única de conocimiento técnico 
-                        profundo, capacidad de aprendizaje acelerado, y enfoque orientado a resultados. Busco roles donde los datos no sean 
-                        solo análisis retrospectivos, sino la base para decisiones que transformen negocios. Si buscas a alguien que combine 
-                        pasión, expertise técnica y visión estratégica, <strong>hablemos</strong>.
-                    </p>
+
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Transformación Profesional hacia Data Science & IA</span>
+                            <i class="fas fa-industry" aria-hidden="true"></i>
+                            <span>Base técnica en automatización y sistemas</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <span>Autodidacta con +60 Tecnologías Dominadas</span>
+                            <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                            <span>Proyectos completos: de los datos al dashboard</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Especialista en ML, Deep Learning, NLP y Optimización</span>
+                            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                            <span>Código con tests, integración continua y Docker</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <span>Stack Completo: Python, BI, MLOps, Cloud & Forecasting</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <span>Proyectos Reales: Dashboards, Modelos Predictivos, APIs</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Enfoque en Impacto: Datos → Insights → Valor de Negocio</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-tools"></i>
-                    Habilidades
-                </span>
-                <h2 class="section-title">Stack Tecnológico</h2>
-                <p class="section-description">
-                    Herramientas y tecnologías que domino para crear soluciones de datos impactantes
-                </p>
-            </div>
-            
-            <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Lenguajes de Programación</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">SQL</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">R</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">DAX</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">M (Power Query)</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Science & ML -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>Machine Learning & IA</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Scikit-learn</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">TensorFlow</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">PyTorch</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Pandas</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">NumPy</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Deep Learning</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">NLP</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Keras</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">XGBoost/LightGBM</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Statistical Analysis & Time Series -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-chart-area"></i>
-                        <h3>Estadística & Series Temporales</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">SciPy</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Statsmodels</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">ARIMA/SARIMA</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Prophet (Meta)</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Forecasting</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NLP & Computer Vision -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-eye"></i>
-                        <h3>NLP Avanzado & Computer Vision</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Transformers (Hugging Face)</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">BERT/GPT</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Spacy</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">OpenCV</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">YOLO/CNN</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MLOps & Deployment -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-rocket"></i>
-                        <h3>MLOps & Deployment</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">MLflow</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Kubernetes</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">FastAPI</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">CI/CD (GitHub Actions)</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Model Monitoring</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Optimization & Simulation -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-calculator"></i>
-                        <h3>Optimización & Simulación</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Linear Programming</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">PuLP/CVXPY</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Monte Carlo Simulation</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">A/B Testing</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Bayesian Optimization</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Business Intelligence -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Business Intelligence</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Power BI</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Tableau</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Google Looker Studio</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Qlik Sense</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visualization -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-chart-bar"></i>
-                        <h3>Visualización de Datos</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Matplotlib</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Seaborn</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Plotly</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Streamlit</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Power BI</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">D3.js</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases & Big Data -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Bases de Datos & Big Data</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">SQL Server</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">PostgreSQL</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">MySQL</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">MongoDB</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Apache Spark</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Databricks</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud & Tools -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Herramientas & Cloud</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Git/GitHub</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Docker</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Azure</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Google Cloud</span>
-                                <span class="skill-level">Avanzado</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Excel Avanzado</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Jupyter</span>
-                                <span class="skill-level">Experto</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
+                            <span>Visión de negocio: máster en Big Data y BI, MBA</span>
                         </div>
                     </div>
                 </div>
@@ -886,364 +204,309 @@
     <section id="projects" class="section projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-rocket"></i>
-                    Proyectos
-                </span>
-                <h2 class="section-title">Portfolio de Proyectos</h2>
+                <span class="section-badge"><i class="fas fa-folder-open" aria-hidden="true"></i> Proyectos</span>
+                <h2 class="section-title">Proyectos</h2>
                 <p class="section-description">
-                    Soluciones end-to-end de Data Science, Machine Learning y Business Intelligence con impacto medible
+                    Tres proyectos terminados y desplegados, con el código abierto en GitHub
                 </p>
             </div>
-            
+
             <div class="projects-grid">
-                <!-- Cinema Subscription Project -->
-                <div class="project-card featured">
+                <!-- capacity-guard -->
+                <article class="project-card featured">
+                    <div class="project-badge"><i class="fas fa-star" aria-hidden="true"></i> Proyecto principal</div>
                     <div class="project-image">
-                        <img src="images/cinema-dashboard.png" alt="Cinema Subscription Strategy Dashboard" loading="lazy">
+                        <img src="images/capacity-guard-dashboard.jpg" alt="Dashboard de capacity-guard: métricas de un servidor con incidentes y riesgo de saturación" loading="lazy" width="1280" height="800">
                         <div class="project-overlay">
-                            <a href="https://proyecto-cine.streamlit.app/" target="_blank" class="project-link-icon">
+                            <a href="https://capacity-guard.streamlit.app/" target="_blank" rel="noopener" class="project-link-icon" aria-label="Abrir el dashboard de capacity-guard">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Plataforma de Optimización de Suscripciones de Cine</h3>
+                        <h3 class="project-title">capacity-guard: aviso temprano de saturación en servidores</h3>
                         <p class="project-description">
-                            Dashboard interactivo para optimización de precios y suscripciones en cines. KPIs visuales, clustering K-Means, simulador de escenarios, proyecciones financieras a 3 años y generación de presentaciones ejecutivas.
+                            Detecta anomalías y estima la probabilidad de que un servidor de hosting sature en los próximos
+                            30 minutos. Incluye ingesta con controles de calidad, cuatro métodos comparados por evento
+                            (umbral, z-score estacional, Isolation Forest y gradient boosting), diagnóstico de la causa y
+                            explicaciones de cada alarma redactadas con IA generativa bajo un guardarraíl.
                         </p>
                         <div class="project-highlights">
                             <div class="highlight-metric">
-                                <span class="metric-value">3 años</span>
-                                <span class="metric-label">Proyecciones Financieras</span>
+                                <span class="metric-value">103.675</span>
+                                <span class="metric-label">Muestras analizadas</span>
                             </div>
                             <div class="highlight-metric">
-                                <span class="metric-value">5 Segmentos</span>
-                                <span class="metric-label">Clustering de Clientes</span>
+                                <span class="metric-value">4</span>
+                                <span class="metric-label">Métodos comparados</span>
                             </div>
                             <div class="highlight-metric">
-                                <span class="metric-value">15+ KPIs</span>
-                                <span class="metric-label">Métricas de Negocio</span>
+                                <span class="metric-value">73</span>
+                                <span class="metric-label">Tests automáticos</span>
                             </div>
                         </div>
                         <div class="project-tags">
                             <span class="tag">Python</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">DuckDB</span>
                             <span class="tag">Streamlit</span>
-                            <span class="tag">Scikit-learn</span>
                             <span class="tag">Plotly</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">NumPy</span>
-                            <span class="tag">Optimization</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://proyecto-cine.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Ver Dashboard</span>
-                            </a>
-                            <a href="https://github.com/carlosmsr92/cine" target="_blank" class="btn btn-secondary btn-sm">
-                                <i class="fab fa-github"></i>
-                                <span>Ver Código</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- E-Commerce Analytics Project -->
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <img src="images/ecommerce-dashboard.png" alt="E-Commerce Global Analytics Dashboard" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://ecommers.streamlit.app/" target="_blank" class="project-link-icon">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Global Analytics Platform</h3>
-                        <p class="project-description">
-                            Dashboard profesional de BI y ML para e-commerce global. 9 tabs de análisis, 4 modelos ML, cohortes, filtros avanzados y análisis estadístico robusto sobre 774,000+ transacciones.
-                        </p>
-                        <div class="project-highlights">
-                            <div class="highlight-metric">
-                                <span class="metric-value">774,000+</span>
-                                <span class="metric-label">Transacciones Analizadas</span>
-                            </div>
-                            <div class="highlight-metric">
-                                <span class="metric-value">9 Tabs</span>
-                                <span class="metric-label">Análisis Interactivo</span>
-                            </div>
-                            <div class="highlight-metric">
-                                <span class="metric-value">4 Modelos ML</span>
-                                <span class="metric-label">Machine Learning</span>
-                            </div>
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Plotly</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Time Series</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://ecommers.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Ver Dashboard</span>
-                            </a>
-                            <a href="https://github.com/carlosmsr92/ecommers" target="_blank" class="btn btn-secondary btn-sm">
-                                <i class="fab fa-github"></i>
-                                <span>Ver Código</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NLP Sentiment Analysis Project -->
-                <div class="project-card coming-soon">
-                    <div class="project-image placeholder">
-                        <div class="coming-soon-content">
-                            <i class="fas fa-brain"></i>
-                            <h4>En Desarrollo</h4>
-                            <p>NLP & Sentiment Analysis</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">NLP Sentiment Analysis API</h3>
-                        <p class="project-description">
-                            API REST para análisis de sentimiento usando <strong>Transformers (BERT)</strong> y <strong>Spacy</strong>. 
-                            Implementará fine-tuning de modelos preentrenados, procesamiento batch y deploy con FastAPI + Docker.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Transformers</span>
-                            <span class="tag">BERT</span>
-                            <span class="tag">Spacy</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">NLP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Computer Vision Project -->
-                <div class="project-card coming-soon">
-                    <div class="project-image placeholder">
-                        <div class="coming-soon-content">
-                            <i class="fas fa-eye"></i>
-                            <h4>En Desarrollo</h4>
-                            <p>Computer Vision Detection</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Real-Time Object Detection System</h3>
-                        <p class="project-description">
-                            Sistema de detección de objetos en tiempo real usando <strong>YOLO v8</strong> y <strong>OpenCV</strong>. 
-                            Implementará transfer learning, tracking multi-objeto y web app con Streamlit.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">YOLO</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Time Series Forecasting Project -->
-                <div class="project-card coming-soon">
-                    <div class="project-image placeholder">
-                        <div class="coming-soon-content">
-                            <i class="fas fa-chart-area"></i>
-                            <h4>En Desarrollo</h4>
-                            <p>Time Series Forecasting</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sales Forecasting with ML Ensemble</h3>
-                        <p class="project-description">
-                            Sistema de predicción de ventas combinando <strong>ARIMA, Prophet y LSTM</strong> en ensemble. 
-                            Incluirá feature engineering avanzado, backtesting automatizado y proyecciones a 12 meses.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">ARIMA</span>
-                            <span class="tag">Prophet</span>
-                            <span class="tag">LSTM</span>
-                            <span class="tag">Time Series</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trading Financial Analysis Project -->
-                <div class="project-card coming-soon">
-                    <div class="project-image placeholder">
-                        <div class="coming-soon-content">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>En Desarrollo</h4>
-                            <p>Financial Trading Analysis</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Algorithmic Trading Strategy Platform</h3>
-                        <p class="project-description">
-                            Plataforma de análisis financiero y backtesting de estrategias de trading. Implementará indicadores 
-                            técnicos, análisis de riesgo, optimización de carteras y predicción de precios con ML.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">TA-Lib</span>
-                            <span class="tag">Backtesting</span>
-                            <span class="tag">Finance</span>
-                            <span class="tag">ML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MLOps Project -->
-                <div class="project-card coming-soon">
-                    <div class="project-image placeholder">
-                        <div class="coming-soon-content">
-                            <i class="fas fa-rocket"></i>
-                            <h4>En Desarrollo</h4>
-                            <p>MLOps Pipeline</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MLOps Production Pipeline</h3>
-                        <p class="project-description">
-                            Pipeline end-to-end de MLOps con <strong>MLflow + Kubernetes + CI/CD</strong>. Implementará 
-                            tracking de experimentos, versionado de modelos, monitoring en producción y retraining automático.
-                        </p>
-                        <div class="project-tags">
                             <span class="tag">MLflow</span>
-                            <span class="tag">Kubernetes</span>
                             <span class="tag">Docker</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">MLOps</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://capacity-guard.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                <span>Ver dashboard</span>
+                            </a>
+                            <a href="https://github.com/carlosmsr92/capacity-guard" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span>Ver código</span>
+                            </a>
                         </div>
                     </div>
+                </article>
+
+                <!-- Cine -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/cinema-dashboard.jpg" alt="Dashboard de estrategia de suscripción de cine con los KPIs del escenario recomendado" loading="lazy" width="1280" height="800">
+                        <div class="project-overlay">
+                            <a href="https://proyecto-cine.streamlit.app/" target="_blank" rel="noopener" class="project-link-icon" aria-label="Abrir el dashboard del cine">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Estrategia de suscripción para un cine</h3>
+                        <p class="project-description">
+                            Analiza las ventas de un cine y evalúa un programa de suscripción anual: segmentación de
+                            clientes con K-Means y PCA, simulador de escenarios de precio con punto de equilibrio y
+                            proyección financiera con ROI y plazo de recuperación.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-metric">
+                                <span class="metric-value">745</span>
+                                <span class="metric-label">Transacciones</span>
+                            </div>
+                            <div class="highlight-metric">
+                                <span class="metric-value">4</span>
+                                <span class="metric-label">Segmentos</span>
+                            </div>
+                            <div class="highlight-metric">
+                                <span class="metric-value">5</span>
+                                <span class="metric-label">Escenarios de precio</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">pandas</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://proyecto-cine.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                <span>Ver dashboard</span>
+                            </a>
+                            <a href="https://github.com/carlosmsr92/cine" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span>Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- E-commerce -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/ecommerce-dashboard.jpg" alt="Dashboard de e-commerce: mapa mundial de ventas y ranking de países por ingresos" loading="lazy" width="1280" height="800">
+                        <div class="project-overlay">
+                            <a href="https://ecommers.streamlit.app/" target="_blank" rel="noopener" class="project-link-icon" aria-label="Abrir el dashboard de e-commerce">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analítica global de e-commerce</h3>
+                        <p class="project-description">
+                            Dashboard de business intelligence con nueve pestañas de análisis: geografía, productos,
+                            cohortes y segmentación RFM, canales, finanzas y operaciones, con filtros combinables y
+                            detección de anomalías en transacciones con Isolation Forest.
+                        </p>
+                        <div class="project-highlights">
+                            <div class="highlight-metric">
+                                <span class="metric-value">774.000+</span>
+                                <span class="metric-label">Transacciones</span>
+                            </div>
+                            <div class="highlight-metric">
+                                <span class="metric-value">100.000</span>
+                                <span class="metric-label">Clientes</span>
+                            </div>
+                            <div class="highlight-metric">
+                                <span class="metric-value">9</span>
+                                <span class="metric-label">Pestañas de análisis</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">pandas</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://ecommers.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                <span>Ver dashboard</span>
+                            </a>
+                            <a href="https://github.com/carlosmsr92/ecommerce-analytics" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span>Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-tools" aria-hidden="true"></i> Habilidades</span>
+                <h2 class="section-title">Herramientas que uso</h2>
+                <p class="section-description">Agrupadas por área y con el proyecto donde puedes verlas en acción</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-code" aria-hidden="true"></i><h3>Lenguajes</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span>
+                    </div>
+                    <p class="skill-used">En: <a href="#projects">los tres proyectos</a></p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-table" aria-hidden="true"></i><h3>Datos y calidad</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">DuckDB</span>
+                        <span class="tag">Parquet</span><span class="tag">Validación de datos</span>
+                    </div>
+                    <p class="skill-used">En: <a href="https://github.com/carlosmsr92/capacity-guard" target="_blank" rel="noopener">capacity-guard</a>, <a href="https://github.com/carlosmsr92/ecommerce-analytics" target="_blank" rel="noopener">e-commerce</a></p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-brain" aria-hidden="true"></i><h3>Machine learning</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">scikit-learn</span><span class="tag">Gradient boosting</span>
+                        <span class="tag">Isolation Forest</span><span class="tag">K-Means y PCA</span>
+                        <span class="tag">Autoencoder</span>
+                    </div>
+                    <p class="skill-used">En: <a href="https://github.com/carlosmsr92/capacity-guard" target="_blank" rel="noopener">capacity-guard</a>, <a href="https://github.com/carlosmsr92/cine" target="_blank" rel="noopener">cine</a>, <a href="https://github.com/carlosmsr92/ecommerce-analytics" target="_blank" rel="noopener">e-commerce</a></p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-chart-pie" aria-hidden="true"></i><h3>Visualización y BI</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">Streamlit</span><span class="tag">Plotly</span><span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span><span class="tag">Power BI</span>
+                    </div>
+                    <p class="skill-used">En: <a href="#projects">los tres dashboards</a>; Power BI en formación</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-gears" aria-hidden="true"></i><h3>Ingeniería y despliegue</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">Git y GitHub</span><span class="tag">pytest</span><span class="tag">GitHub Actions</span>
+                        <span class="tag">Docker</span><span class="tag">MLflow</span>
+                    </div>
+                    <p class="skill-used">En: <a href="https://github.com/carlosmsr92/capacity-guard" target="_blank" rel="noopener">capacity-guard</a></p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><h3>IA generativa</h3></div>
+                    <div class="project-tags">
+                        <span class="tag">API de LLM</span><span class="tag">Guardarraíles</span><span class="tag">Explicaciones verificables</span>
+                    </div>
+                    <p class="skill-used">En: <a href="https://github.com/carlosmsr92/capacity-guard" target="_blank" rel="noopener">capacity-guard</a></p>
                 </div>
             </div>
         </div>
     </section>
 
- <!-- Education Section -->
+    <!-- Education Section -->
     <section id="education" class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Formación & Certificaciones</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Educación continua en las últimas tecnologías de Data Science e IA</p>
+                <span class="section-badge"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Formación</span>
+                <h2 class="section-title">Formación</h2>
             </div>
-            
+
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2023 - Actualidad</div>
+                        <div class="timeline-date">2024 – actualidad</div>
                         <h3 class="timeline-title">Grado en Ciencia de Datos Aplicada</h3>
                         <p class="timeline-institution">Universitat Oberta de Catalunya (UOC)</p>
-                        <p class="timeline-description">
-                            Formación integral en análisis de datos, machine learning, estadística avanzada y 
-                            visualización de datos. Especialización en Python, R, SQL y herramientas de Big Data.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">Machine Learning</span>
-                            <span class="highlight-badge">Deep Learning</span>
-                            <span class="highlight-badge">Big Data</span>
-                            <span class="highlight-badge">Business Intelligence</span>
-                        </div>
                     </div>
                 </div>
-
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">En curso</div>
+                        <h3 class="timeline-title">Data Science &amp; Analytics Mastery</h3>
+                        <p class="timeline-institution">DataScience4Business (DS4B)</p>
+                        <p class="timeline-description">Incluye Python Data Science Mastery y Tableau y Data Analytics Mastery.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">En curso</div>
+                        <h3 class="timeline-title">Certificaciones en Data Science</h3>
+                        <p class="timeline-institution">DataCamp</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">Curso de Programación en Python (75 horas)</h3>
+                        <p class="timeline-institution">Universidad Internacional de La Rioja (UNIR)</p>
+                    </div>
+                </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">2024</div>
                         <h3 class="timeline-title">Máster en Big Data y Business Intelligence (60 ECTS)</h3>
-                        <p class="timeline-institution">ENEB - Universidad Isabel I de Castilla</p>
-                        <p class="timeline-description">
-                            Especialización en análisis de grandes volúmenes de datos y visualización estratégica.
-                            Enfoque en herramientas de BI, data warehousing y toma de decisiones basada en datos.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">Big Data</span>
-                            <span class="highlight-badge">Business Intelligence</span>
-                            <span class="highlight-badge">Data Warehousing</span>
-                        </div>
+                        <p class="timeline-institution">ENEB · avalado por la Universidad Internacional Isabel I de Castilla</p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">2024</div>
-                        <h3 class="timeline-title">MBA - Máster en Administración y Dirección de Empresas</h3>
-                        <p class="timeline-institution">ENEB - Universidad Isabel I de Castilla</p>
-                        <p class="timeline-description">
-                            Gestión empresarial y toma de decisiones basadas en datos. Enfoque en estrategia 
-                            corporativa, finanzas y liderazgo organizacional.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">Gestión Empresarial</span>
-                            <span class="highlight-badge">Estrategia</span>
-                            <span class="highlight-badge">Liderazgo</span>
-                        </div>
+                        <h3 class="timeline-title">MBA, Máster en Administración y Dirección de Empresas (60 ECTS)</h3>
+                        <p class="timeline-institution">ENEB · avalado por la Universidad Internacional Isabel I de Castilla</p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2021</div>
+                        <div class="timeline-date">2024</div>
                         <h3 class="timeline-title">Máster en Project Management (60 ECTS)</h3>
-                        <p class="timeline-institution">ENEB - Universidad Isabel I de Castilla</p>
-                        <p class="timeline-description">
-                            Gestión de proyectos con metodologías ágiles y tradicionales. Planificación, 
-                            control de recursos y gestión de equipos multidisciplinares.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">Metodologías Ágiles</span>
-                            <span class="highlight-badge">Scrum</span>
-                            <span class="highlight-badge">Gestión de Riesgos</span>
-                        </div>
+                        <p class="timeline-institution">ENEB · avalado por la Universidad Internacional Isabel I de Castilla</p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2023</div>
-                        <h3 class="timeline-title">Curso de Programación en Python (75 horas)</h3>
-                        <p class="timeline-institution">Universidad Internacional de La Rioja (UNIR)</p>
-                        <p class="timeline-description">
-                            Fundamentos avanzados de Python para Data Science. Programación orientada a objetos, 
-                            estructuras de datos y algoritmos.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">Python</span>
-                            <span class="highlight-badge">POO</span>
-                            <span class="highlight-badge">Algoritmos</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2014 - 2016</div>
+                        <div class="timeline-date">2014 – 2016</div>
                         <h3 class="timeline-title">Técnico Superior en Automatización y Robótica Industrial</h3>
-                        <p class="timeline-institution">I.E.S Santa María de Guía</p>
-                        <p class="timeline-description">
-                            Programación de PLCs, lógica de sistemas y mantenimiento industrial. Desarrollo de 
-                            sistemas de control automatizado y robótica aplicada.
-                        </p>
-                        <div class="timeline-highlights">
-                            <span class="highlight-badge">PLCs</span>
-                            <span class="highlight-badge">Automatización</span>
-                            <span class="highlight-badge">Robótica</span>
-                        </div>
+                        <p class="timeline-institution">IES Santa María de Guía</p>
                     </div>
                 </div>
             </div>
@@ -1254,60 +517,41 @@
     <section id="contact" class="section contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">
-                    <i class="fas fa-envelope"></i>
-                    Contacto
-                </span>
-                <h2 class="section-title">¿Trabajamos Juntos?</h2>
+                <span class="section-badge"><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</span>
+                <h2 class="section-title">¿Hablamos?</h2>
                 <p class="section-description">
-                    Estoy disponible para proyectos de análisis de datos y desarrollo de dashboards
+                    Si buscas a alguien para un puesto de análisis de datos, BI o ciencia de datos, escríbeme
                 </p>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                         <h3>Email</h3>
                         <a href="mailto:cmsr92@uoc.edu">cmsr92@uoc.edu</a>
                     </div>
-                    
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
                         <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener">
-                            CMSR92
-                        </a>
+                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener">linkedin.com/in/cmsr92</a>
                     </div>
-                    
                     <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
                         <h3>GitHub</h3>
-                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener">
-                            @carlosmsr92
-                        </a>
+                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener">github.com/carlosmsr92</a>
                     </div>
                 </div>
-                
                 <div class="contact-cta">
-                    <p class="contact-text">
-                        ¿Tienes un proyecto en mente o quieres colaborar? No dudes en contactarme. 
-                        Estoy siempre abierto a nuevas oportunidades y desafíos interesantes en el mundo de los datos.
-                    </p>
                     <a href="mailto:cmsr92@uoc.edu" class="btn btn-primary btn-lg">
-                        <i class="fas fa-paper-plane"></i>
-                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        <span>Enviar un email</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1315,7 +559,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo-container">
-                        <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <circle cx="50" cy="50" r="13" class="node-center" stroke="#FFFFFF" stroke-width="2.5" />
                             <circle cx="50" cy="30" r="6" class="node" />
                             <circle cx="30" cy="50" r="6" class="node" />
@@ -1331,47 +575,35 @@
                         </svg>
                         <span class="logo-text">CMSR<span class="gradient-text">92</span></span>
                     </div>
-                    <p class="footer-description">
-                        Data Scientist especializado en transformar datos en decisiones estratégicas
-                    </p>
+                    <p class="footer-description">Carlos Manuel Suárez Rivero · Analista de datos</p>
                 </div>
-                
+
                 <div class="footer-links">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Secciones</h4>
                     <ul>
-                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#about">Sobre mí</a></li>
                         <li><a href="#projects">Proyectos</a></li>
                         <li><a href="#skills">Habilidades</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-social">
-                    <h4>Sígueme</h4>
+                    <h4>Enlaces</h4>
                     <div class="social-links">
-                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:cmsr92@uoc.edu" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
+                        <a href="https://github.com/carlosmsr92" target="_blank" rel="noopener" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/cmsr92" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:cmsr92@uoc.edu" aria-label="Email" class="social-link"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Carlos Manuel Suárez Rivero. Todos los derechos reservados.</p>
-                <p class="footer-tech">
-                    Desarrollado con <i class="fas fa-heart"></i> usando HTML, CSS y JavaScript
-                </p>
+                <p>&copy; 2026 Carlos Manuel Suárez Rivero</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

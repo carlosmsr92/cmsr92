@@ -114,34 +114,6 @@ if (mobileMenuToggle) {
     });
 }
 
-// ========== Animate Skill Bars on Scroll ==========
-const animateSkillBars = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const skillBars = entry.target.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const progress = bar.getAttribute('data-progress');
-                if (progress) {
-                    setTimeout(() => {
-                        bar.style.width = progress + '%';
-                    }, 100);
-                }
-            });
-            observer.unobserve(entry.target);
-        }
-    });
-};
-
-const skillsObserver = new IntersectionObserver(animateSkillBars, {
-    threshold: 0.2
-});
-
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-    skillsObserver.observe(skillsSection);
-}
-
-
 // ========== Intersection Observer for Fade-In Animations ==========
 const observerOptions = {
     threshold: 0.1,
@@ -226,6 +198,6 @@ console.log(
     'color: #57CDDF; font-size: 14px;'
 );
 console.log(
-    '%c¿Quieres colaborar o tienes un proyecto en mente? Contáctame: carlcosm92@gmail.com',
+    '%c¿Quieres colaborar o tienes un proyecto en mente? Contáctame: cmsr92@uoc.edu',
     'color: #0CA5BE; font-size: 12px;'
 );
