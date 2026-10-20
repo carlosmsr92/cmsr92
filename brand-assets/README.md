@@ -91,7 +91,7 @@ Este gradiente cyan → turquesa → cyan crea un efecto vibrante que:
 ### Características Especiales
 - **Sombra sutil**: Mejora contraste en fondos claros sin afectar fondos oscuros
 - **Gradientes incrustados**: Los colores están definidos dentro del SVG
-- **Sin dependencias**: No requiere fuentes externas (Courier New o, si no está, la monoespaciada del sistema)
+- **Sin dependencias**: El texto «CMSR92» está convertido en trazos, así que no necesita ninguna fuente instalada y se ve igual en Windows, Mac y Linux
 
 ---
 
@@ -146,7 +146,7 @@ Este gradiente cyan → turquesa → cyan crea un efecto vibrante que:
 ## 📝 Notas de Diseño
 
 1. **Red Neuronal**: El símbolo representa conexiones de datos, machine learning e inteligencia artificial
-2. **Tipografía**: Monospace bold para reflejar profesionalismo técnico
+2. **Tipografía**: Courier Prime Bold, una monoespaciada con remates de estilo máquina de escribir. Se usa en trazos dentro de los SVG; su licencia (SIL Open Font License 1.1) permite usarla en un logo
 3. **Colores Cyan/Turquesa**: Asociados con tecnología, innovación, confianza y datos
 4. **Versatilidad**: Diseñado para funcionar en cualquier contexto (web, impreso, digital)
 

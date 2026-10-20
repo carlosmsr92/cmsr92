@@ -265,14 +265,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-text {
-    /* Como el logo de marca (brand-assets): monoespaciada en negrita con el degradado turquesa */
-    font-family: 'Courier New', FreeMono, Courier, monospace;
-    font-size: 1.6rem;
-    font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    /* «CMSR92» en trazos, el mismo dibujo que el logo de marca (brand-assets): igual en cualquier sistema */
+    display: block;
+    height: 1.15rem;
+    width: auto;
 }
 
 .nav-links {
