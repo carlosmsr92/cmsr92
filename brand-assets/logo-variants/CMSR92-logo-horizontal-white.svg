@@ -1,0 +1,24 @@
+<svg width="280" height="100" viewBox="0 0 280 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Logo horizontal en blanco: para bandas y fondos de color de marca (mismo dibujo que CMSR92-logo-horizontal.svg) -->
+
+    <!-- Conexiones -->
+    <line x1="50" y1="20" x2="20" y2="50" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="50" y1="20" x2="80" y2="50" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="20" y1="50" x2="35" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="20" y1="50" x2="65" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="80" y1="50" x2="35" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="80" y1="50" x2="65" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <line x1="35" y1="80" x2="65" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+
+    <!-- Nodos externos -->
+    <circle cx="50" cy="20" r="8" fill="#FFFFFF" />
+    <circle cx="20" cy="50" r="8" fill="#FFFFFF" />
+    <circle cx="80" cy="50" r="8" fill="#FFFFFF" />
+    <circle cx="35" cy="80" r="8" fill="#FFFFFF" />
+    <circle cx="65" cy="80" r="8" fill="#FFFFFF" />
+
+    <!-- Nodo central -->
+    <circle cx="50" cy="50" r="18" fill="#FFFFFF" />
+
+    <text x="120" y="62" font-family="'Courier New', FreeMono, Courier, monospace" font-size="42" font-weight="bold" fill="#FFFFFF" text-anchor="start">CMSR92</text>
+</svg>

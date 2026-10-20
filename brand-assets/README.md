@@ -24,6 +24,14 @@ Este directorio contiene todos los recursos de marca (logos y especificaciones d
 - **Formato**: Logo horizontal de alta calidad (2x resolución)
 - **Mejor para**: Materiales impresos, posters, banners de alta resolución
 
+### 5. **CMSR92-logo-horizontal-white.svg** (280×100px)
+- **Uso principal**: Sobre fondos de color de marca (banda de cabecera de los dashboards)
+- **Formato**: Mismo dibujo que el horizontal, en blanco y sin nodos internos
+- **Mejor para**: Fondos turquesa oscuro (#065A68 → #087F93), donde el blanco tiene ≥ 4,7:1
+
+> Los dashboards usan PNG exportados de estas variantes (`cmsr92-logo-blanco.png` y `cmsr92-simbolo.png`) para no
+> depender de la tipografía instalada en el equipo de quien los visita.
+
 ---
 
 ## 🎨 Paleta de Colores Corporativos
@@ -83,7 +91,7 @@ Este gradiente cyan → turquesa → cyan crea un efecto vibrante que:
 ### Características Especiales
 - **Sombra sutil**: Mejora contraste en fondos claros sin afectar fondos oscuros
 - **Gradientes incrustados**: Los colores están definidos dentro del SVG
-- **Sin dependencias**: No requiere fuentes externas (usa monospace del sistema)
+- **Sin dependencias**: No requiere fuentes externas (Courier New o, si no está, la monoespaciada del sistema)
 
 ---
 

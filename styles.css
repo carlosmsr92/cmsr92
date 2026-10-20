@@ -17,6 +17,7 @@
     --color-primary-strong: #087F93;
     --color-primary-strong-hover: #077585;
     --gradient-text: linear-gradient(135deg, #077585 0%, #0A8CA2 100%);
+    --color-primary-text: #077585;
     
     /* Light Mode */
     --bg-primary: #FFFFFF;
@@ -24,7 +25,7 @@
     --bg-tertiary: #F3F4F6;
     --text-primary: #1F2937;
     --text-secondary: #4B5563;
-    --text-tertiary: #6B7280;
+    --text-tertiary: #636A77;
     --border-color: #E5E7EB;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -59,6 +60,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --gradient-text: var(--gradient-primary);
+        --color-primary-text: #0CA5BE;
         --bg-primary: #0A0E1A;
         --bg-secondary: #141824;
         --bg-tertiary: #1E293B;
@@ -75,6 +77,7 @@
 
 [data-theme="dark"] {
     --gradient-text: var(--gradient-primary);
+    --color-primary-text: #0CA5BE;
     --bg-primary: #0A0E1A;
     --bg-secondary: #141824;
     --bg-tertiary: #1E293B;
@@ -91,12 +94,13 @@
 /* Tema claro elegido con el botón: sin este bloque, con el sistema en oscuro el botón no podía volver a claro */
 [data-theme="light"] {
     --gradient-text: linear-gradient(135deg, #077585 0%, #0A8CA2 100%);
+    --color-primary-text: #077585;
     --bg-primary: #FFFFFF;
     --bg-secondary: #F8FAFB;
     --bg-tertiary: #F3F4F6;
     --text-primary: #1F2937;
     --text-secondary: #4B5563;
-    --text-tertiary: #6B7280;
+    --text-tertiary: #636A77;
     --border-color: #E5E7EB;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -240,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-icon .node-center {
-    fill: #57CDDF;
+    fill: #0CA5BE;
     animation: pulse 2s ease-in-out infinite;
 }
 
@@ -256,22 +260,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(0.95); }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* Asegurar que el gradiente del 92 también funcione */
-.logo-text .gradient-text {
-    background: linear-gradient(135deg, #0CA5BE 0%, #57CDDF 100%);
+    /* Como el logo de marca (brand-assets): monoespaciada en negrita con el degradado turquesa */
+    font-family: 'Courier New', FreeMono, Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -293,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .nav-link::after {
@@ -308,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link.active {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .nav-link:hover::after,
@@ -400,11 +398,6 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
     max-width: 100%;
     overflow: visible;
-}
-
-.badge-icon {
-    font-size: 1.25rem;
-    flex-shrink: 0;
 }
 
 .hero-title {
@@ -617,7 +610,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--radius-lg);
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     margin-bottom: var(--spacing-md);
 }
 
@@ -684,7 +677,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight-item i {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     font-size: 1.25rem;
 }
 
@@ -724,54 +717,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-category-header i {
     font-size: 1.5rem;
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .skill-category-header h3 {
     font-size: 1.25rem;
-}
-
-.skill-items {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skill-name {
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.skill-level {
-    font-size: 0.875rem;
-    color: var(--text-tertiary);
-}
-
-.skill-bar {
-    height: 0.5rem;
-    background: var(--bg-tertiary);
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: var(--gradient-primary);
-    border-radius: var(--radius-sm);
-    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 0;
 }
 
 /* ========== Projects Section ========== */
@@ -869,7 +819,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     font-size: 1.5rem;
     text-decoration: none;
     transition: all var(--transition-base);
@@ -928,27 +878,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.05em;
 }
 
-.project-features {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: var(--spacing-lg);
-}
-
-.feature-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    font-size: 0.9375rem;
-    color: var(--text-secondary);
-}
-
-.feature-item i {
-    color: var(--color-primary);
-    margin-top: 0.25rem;
-    flex-shrink: 0;
-}
-
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -969,93 +898,6 @@ h1, h2, h3, h4, h5, h6 {
 .project-actions {
     display: flex;
     gap: var(--spacing-sm);
-}
-
-.project-card.coming-soon {
-    border-style: dashed;
-    opacity: 0.85;
-    transition: all var(--transition-base);
-}
-
-.project-card.coming-soon:hover {
-    opacity: 1;
-    border-color: var(--color-primary);
-}
-
-.project-image.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.project-image.placeholder::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 10px,
-        rgba(var(--color-primary-rgb), 0.03) 10px,
-        rgba(var(--color-primary-rgb), 0.03) 20px
-    );
-    animation: moveStripes 20s linear infinite;
-}
-
-@keyframes moveStripes {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(50px, 50px);
-    }
-}
-
-.coming-soon-content {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.coming-soon-content i {
-    font-size: 3.5rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: var(--spacing-md);
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.7;
-        transform: scale(1.05);
-    }
-}
-
-.coming-soon-content h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-}
-
-.coming-soon-content p {
-    color: var(--text-secondary);
-    font-size: 0.9375rem;
 }
 
 /* ========== Education Section ========== */
@@ -1124,7 +966,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-institution {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     font-weight: 600;
     margin-bottom: var(--spacing-md);
 }
@@ -1133,22 +975,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: var(--spacing-md);
-}
-
-.timeline-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.highlight-badge {
-    padding: 0.375rem 0.75rem;
-    background: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    font-weight: 500;
 }
 
 /* ========== Contact Section ========== */
@@ -1211,7 +1037,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-card a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .contact-cta {
@@ -1220,14 +1046,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     padding: var(--spacing-2xl);
-}
-
-.contact-text {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-    max-width: 600px;
-    margin: 0 auto var(--spacing-xl);
 }
 
 /* ========== Footer ========== */
@@ -1246,19 +1064,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-brand .logo-container {
     margin-bottom: var(--spacing-md);
-}
-
-/* Asegurar que el logo en footer también use colores corporativos */
-.footer .logo-icon .node {
-    fill: #0CA5BE;
-}
-
-.footer .logo-icon .node-center {
-    fill: #57CDDF;
-}
-
-.footer .logo-icon .connection {
-    stroke: #0CA5BE;
 }
 
 .footer-description {
@@ -1287,7 +1092,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-links a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .footer-social .social-links {
@@ -1325,14 +1130,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: var(--text-tertiary);
     font-size: 0.875rem;
-}
-
-.footer-tech {
-    margin-top: 0.5rem;
-}
-
-.footer-tech i {
-    color: var(--color-primary);
 }
 
 /* ========== Animations ========== */
@@ -1454,7 +1251,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav-link.active {
-        color: var(--color-primary);
+        color: var(--color-primary-text);
         font-weight: 700;
     }
     
@@ -1503,11 +1300,6 @@ h1, h2, h3, h4, h5, h6 {
         max-width: fit-content;
         display: inline-flex;
         word-wrap: break-word;
-    }
-    
-    .badge-icon {
-        font-size: 1.125rem;
-        flex-shrink: 0;
     }
     
     .hero-title {
@@ -1648,14 +1440,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.125rem;
     }
     
-    .skill-name {
-        font-size: 0.9375rem;
-    }
-    
-    .skill-level {
-        font-size: 0.75rem;
-    }
-    
     /* Project cards optimizadas */
     .project-card {
         padding: var(--spacing-lg);
@@ -1673,20 +1457,6 @@ h1, h2, h3, h4, h5, h6 {
     .project-highlights {
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);
-    }
-    
-    .project-highlight {
-        padding: var(--spacing-sm);
-        font-size: 0.875rem;
-    }
-    
-    .tech-tags {
-        gap: 0.375rem;
-    }
-    
-    .tech-tag {
-        padding: 0.375rem 0.75rem;
-        font-size: 0.75rem;
     }
     
     /* Timeline para móviles */
@@ -1718,10 +1488,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .timeline-title {
         font-size: 1.125rem;
-    }
-    
-    .timeline-company {
-        font-size: 0.9375rem;
     }
     
     .timeline-description {
@@ -1757,11 +1523,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .contact-cta {
         padding: var(--spacing-xl);
-    }
-    
-    .contact-text {
-        font-size: 1rem;
-        line-height: 1.7;
     }
     
     /* Footer optimizado */
@@ -1946,7 +1707,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 /* ========== Ajustes móvil ========== */
 .btn {
     white-space: nowrap;
@@ -1981,5 +1741,26 @@ h1, h2, h3, h4, h5, h6 {
         flex: 1 1 auto;
         max-width: none;
         justify-content: center;
+    }
+}
+
+/* ========== Accesibilidad ========== */
+/* Foco visible al navegar con teclado (enlaces, botones y el cambio de tema) */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-primary-text);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* Sin animaciones para quien pide reducir movimiento en el sistema */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

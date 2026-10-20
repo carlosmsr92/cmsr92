@@ -39,5 +39,5 @@
     <circle cx="150" cy="120" r="26" fill="#0BA5BE" stroke="white" stroke-width="3.5" />
     
     <!-- Texto CMSR92 centrado debajo -->
-    <text x="150" y="235" font-family="monospace" font-size="48" font-weight="bold" fill="url(#textGradient)" text-anchor="middle" filter="url(#textShadow)">CMSR92</text>
+    <text x="150" y="235" font-family="'Courier New', FreeMono, Courier, monospace" font-size="48" font-weight="bold" fill="url(#textGradient)" text-anchor="middle" filter="url(#textShadow)">CMSR92</text>
 </svg>

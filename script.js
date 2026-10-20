@@ -6,9 +6,15 @@
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to system preference
+// Tema elegido con el botón o, si no, el del sistema. Clave nueva: la versión anterior guardaba 'theme' en cada visita
+// aunque nadie lo eligiera, y eso congelaba el tema del sistema de aquella primera visita
 const getPreferredTheme = () => {
-    const savedTheme = localStorage.getItem('theme');
+    let savedTheme = null;
+    try {
+        savedTheme = localStorage.getItem('theme-choice');
+    } catch (e) {
+        // Sin almacenamiento: se usa la preferencia del sistema
+    }
     if (savedTheme) {
         return savedTheme;
     }
@@ -18,18 +24,25 @@ const getPreferredTheme = () => {
 // Set theme
 const setTheme = (theme) => {
     html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
 };
 
-// Initialize theme
+// Initialize theme: sin guardar nada, para que siga al sistema mientras el visitante no elija
 setTheme(getPreferredTheme());
 
-// Toggle theme on button click
+// Toggle theme on button click: solo una elección explícita se recuerda
 themeToggle.addEventListener('click', () => {
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
+    try {
+        localStorage.setItem('theme-choice', newTheme);
+    } catch (e) {
+        // Sin almacenamiento (modo privado o bloqueado): el cambio vale para esta visita
+    }
 });
+
+// Desplazamiento suave salvo si el sistema pide reducir movimiento
+const scrollBehavior = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 // ========== Smooth Scrolling for Navigation Links ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -43,7 +56,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             if (targetId === '#hero') {
                 window.scrollTo({
                     top: 0,
-                    behavior: 'smooth'
+                    behavior: scrollBehavior()
                 });
             } else {
                 // Para otras secciones, aplicar offset del header
@@ -53,7 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
                 window.scrollTo({
                     top: offsetPosition,
-                    behavior: 'smooth'
+                    behavior: scrollBehavior()
                 });
             }
         }

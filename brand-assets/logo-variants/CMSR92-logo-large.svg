@@ -39,5 +39,5 @@
     <circle cx="100" cy="100" r="36" fill="#0BA5BE" stroke="white" stroke-width="5" />
     
     <!-- Texto CMSR92 con gradiente y sombra sutil -->
-    <text x="240" y="124" font-family="monospace" font-size="84" font-weight="bold" fill="url(#textGradient)" text-anchor="start" filter="url(#textShadow)">CMSR92</text>
+    <text x="240" y="124" font-family="'Courier New', FreeMono, Courier, monospace" font-size="84" font-weight="bold" fill="url(#textGradient)" text-anchor="start" filter="url(#textShadow)">CMSR92</text>
 </svg>
